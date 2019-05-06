@@ -1,5 +1,9 @@
 venv/*
+.idea/*
 *.pyc
+*/migrations/*
+!*/migrations/__init__.py
+*/__pychache__/*
 app/categories/migrations/*
 app/categories/__pycache__/*
 app/customers/migrations/*
