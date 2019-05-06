@@ -21,4 +21,4 @@ class Customer(models.Model):
     address = models.OneToOneField(Place, models.CASCADE)
 
     def __str__(self):
-        return self.name
+        return self.full_name

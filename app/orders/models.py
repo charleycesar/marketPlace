@@ -20,4 +20,4 @@ class Order(models.Model):
     obs = models.CharField(max_length=500)
 
     def __str__(self):
-        return self.status
+        return self.status.name

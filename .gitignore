@@ -1,1 +1,10 @@
 venv/*
+*.pyc
+app/categories/migrations/*
+app/categories/__pycache__/*
+app/customers/migrations/*
+app/customers/__pycache__/*
+app/orders/migrations/*
+app/orders/__pycache__/*
+app/products/migrations/*
+app/products/__pycache__/*

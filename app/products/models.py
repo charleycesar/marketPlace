@@ -12,7 +12,7 @@ class TypeUnity(models.Model):
 
 
 class Product(models.Model):
-    category = models.OneToOneField(Category,models.CASCADE)
+    category = models.ForeignKey(Category,models.CASCADE)
     price = models.FloatField()
     name = models.CharField(max_length=255)
     description = models.CharField(max_length=500)
@@ -23,7 +23,7 @@ class Product(models.Model):
 
 class Item(models.Model):
     unity = models.IntegerField()
-    type_unity = models.OneToOneField(TypeUnity, on_delete=models.CASCADE)
+    type_unity = models.ForeignKey(TypeUnity, on_delete=models.CASCADE)
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     order = models.ForeignKey(Order, on_delete=models.CASCADE, default=False)
 
